@@ -1,8 +1,11 @@
 import './App.css';
+import { Suspense } from 'react';
 import ParticleBackground from 'react-particle-backgrounds'
 import { Routes, Route } from 'react-router-dom';
 import Landing from './components/Landing.js';
-
+import About from './components/About.js';
+import Projects from './components/Projects';
+import Loader from './components/Loader.js';
 function App() {
 
   const settings = {
@@ -24,16 +27,26 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <ParticleBackground settings={settings} className="bg"/>
-      <Routes>
-        <Route
-          path='/'
-          element={<Landing/>}
-        />
-        
-      </Routes>
-    </div>
+    <Suspense fallback={<Loader/>}>
+      <div className="App">
+        <ParticleBackground settings={settings} className="bg"/>
+        <Routes>
+          <Route
+            path='/'
+            element={<Landing/>}
+          />
+          <Route
+            path='/about'
+            element={<About/>}
+          />
+          <Route
+            path='/projects'
+            element={<Projects/>}
+          />
+          
+        </Routes>
+      </div>
+    </Suspense>
   );
 }
 
