@@ -6,6 +6,8 @@ import Landing from './components/Landing.js';
 import About from './components/About.js';
 import Projects from './components/Projects';
 import Loader from './components/Loader.js';
+import Socials from './components/Socials.js';
+
 function App() {
 
   const settings = {
@@ -45,6 +47,7 @@ function App() {
           />
           
         </Routes>
+        <Socials/>
       </div>
     </Suspense>
   );

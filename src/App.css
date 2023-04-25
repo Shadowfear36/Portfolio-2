@@ -248,3 +248,21 @@ button:hover {
   /* white-space: nowrap;  */
   text-overflow: ellipsis;
 }
+
+.btm-right {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btm-right > * {
+  margin-right: 5px;
+  color: white;
+}
+
+.btm-right > *:hover {
+  color: green;
+}
