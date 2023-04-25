@@ -49,7 +49,7 @@ const projArray = [{
             height: 30,
             lineHeight: 1,
             textAlign: 'center',
-            width: 30,
+            width: 30
           },
           children: <span>{`>`}</span>,
         }}
