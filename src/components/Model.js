@@ -12,7 +12,7 @@ export default function Model() {
         const planet = useRef();
 
         useFrame(() => {
-            planet.current.rotation.y += 0.01;
+            planet.current.rotation.y += 0.005;
         });
         return (
             <mesh ref={planet} >

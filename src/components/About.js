@@ -41,7 +41,7 @@ export default function About() {
             </div>
         </div>
         <div className="gif">
-            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzc5NjVlZmY1ZGI0OGI1MDA5ODUwZDA4ZWE0NzBlNjNhOTM3NjUwNyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/dxmjrltfAJRLvqADOl/giphy.gif"/>
+            <img alt="Space Man Floating" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzc5NjVlZmY1ZGI0OGI1MDA5ODUwZDA4ZWE0NzBlNjNhOTM3NjUwNyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/dxmjrltfAJRLvqADOl/giphy.gif"/>
         </div>
         </div>
     </div>

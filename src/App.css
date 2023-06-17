@@ -1,24 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
+#root{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
 
 @media (max-width: 1000px) {
   .m-flex{
     display: flex;
   }
-
+  .m-center{
+    text-align: center;
+  }
   .m-col{
     flex-direction: column;
   }
   .m-row{
     flex-direction: row;
   }
+  .m-title{
+    font-size: 42px !important;
+
+  }
+
+  .m-job{
+    font-size: 40px !important;
+  }
+  #root{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .m-mar-t-0{
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  .flip-landing{
+    flex-direction: column-reverse;
+  }
+  .m-uncenter{
+    justify-content: flex-start !important;
+  }
+  .canvas{
+    height: 75%;
+    width: 100%;
+  }
+
+  
 }
 .App {
   color: white;
   font-family: 'Orbitron', sans-serif;
-  padding: 25px;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .logo {
@@ -62,7 +98,9 @@ button:hover {
   height: 50px;
   width: 150px;
 }
-
+.pb-10{
+ align-items: bottom;
+}
 .flex {
   display: flex;
 }
@@ -267,4 +305,8 @@ button:hover {
 
 .btm-right > *:hover {
   color: green;
+}
+
+.p-25{
+  padding: 25px;
 }

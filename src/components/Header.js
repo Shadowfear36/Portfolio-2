@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Header({page}) {
     const checkPage = () => {
-        if (page == "projects") {
+        if (page === "projects") {
             return <NavLink to="/about"><button className='btn-2 top-right'>About Me</button></NavLink>
         } else {
             return <NavLink to="/projects"><button className='btn-2 top-right'>Projects</button></NavLink>
