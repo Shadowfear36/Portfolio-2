@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 export default function Landing() {
 
   return (
-    <div className="p-l-0 flex vp-100 m-col flip-landing">
+    <div className="p-l-20 flex vp-100 m-col flip-landing no-scroll-x">
       <div className="flex flex-column center p-l-25 m-uncenter h-100 m-mar-t-0">
         <h1 className="title m-0 p-0 m-title">Dylan<br/>Rhinehart</h1>
         <h2 className="sub-title m-0 p-0 m-job">Software Engineer</h2>

@@ -3,7 +3,7 @@ import Header from './Header';
 
 export default function About() {
   return (
-    <div className="vp-100">
+    <div className="vp-100 no-scroll-x">
         <Header/>
         <div className="flex flex-row m-t-20 m-centerj centerj m-col flip-landing">
             <div className="flex flex-column centered">

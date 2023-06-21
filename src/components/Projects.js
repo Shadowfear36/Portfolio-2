@@ -42,60 +42,61 @@ const projArray = [{
 
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   return (
-    <div className="vp-100">
+    <div className="vp-100 no-scroll-x">
         <Header page="projects"/>
-        <div className="m-t-20">
+        <div className="m-t-20 no-scroll-x" >
             <h2 className="sub-title m-center m-0 p-0">Projects</h2>
-            <div>
+            <div className="carousel-container">
             <ReactSimplyCarousel
-        activeSlideIndex={activeSlideIndex}
-        onRequestChange={setActiveSlideIndex}
-        itemsToShow={1}
-        itemsToScroll={1}
-        forwardBtnProps={{
-          //here you can also pass className, or any other button element attributes
-          style: {
-            alignSelf: 'center',
-            background: 'black',
-            border: 'none',
-            borderRadius: '50%',
-            color: 'white',
-            cursor: 'pointer',
-            fontSize: '20px',
-            height: 30,
-            lineHeight: 1,
-            textAlign: 'center',
-            width: 30
-          },
-          children: <span>{`>`}</span>,
-        }}
-        backwardBtnProps={{
-          //here you can also pass className, or any other button element attributes
-          style: {
-            alignSelf: 'center',
-            background: 'black',
-            border: 'none',
-            borderRadius: '50%',
-            color: 'white',
-            cursor: 'pointer',
-            fontSize: '20px',
-            height: 30,
-            lineHeight: 1,
-            textAlign: 'center',
-            width: 30,
-          },
-          children: <span>{`<`}</span>,
-        }}
-        responsiveProps={[
-          {
-            itemsToShow: 2,
-            itemsToScroll: 2,
-            minWidth: 768,
-          },
-        ]}
-        speed={400}
-        easing="linear"
-      >
+              activeSlideIndex={activeSlideIndex}
+              onRequestChange={setActiveSlideIndex}
+              preventScrollOnSwipe={true}
+              itemsToShow={1}
+              itemsToScroll={1}
+              forwardBtnProps={{
+                //here you can also pass className, or any other button element attributes
+                style: {
+                  alignSelf: 'center',
+                  background: 'black',
+                  border: 'none',
+                  borderRadius: '50%',
+                  color: 'white',
+                  cursor: 'pointer',
+                  fontSize: '20px',
+                  height: 30,
+                  lineHeight: 1,
+                  textAlign: 'center',
+                  width: 30
+                },
+                children: <span>{`>`}</span>,
+              }}
+              backwardBtnProps={{
+                //here you can also pass className, or any other button element attributes
+                style: {
+                  alignSelf: 'center',
+                  background: 'black',
+                  border: 'none',
+                  borderRadius: '50%',
+                  color: 'white',
+                  cursor: 'pointer',
+                  fontSize: '20px',
+                  height: 30,
+                  lineHeight: 1,
+                  textAlign: 'center',
+                  width: 30,
+                },
+                children: <span>{`<`}</span>,
+              }}
+              responsiveProps={[
+                {
+                  itemsToShow: 2,
+                  itemsToScroll: 2,
+                  minWidth: 768,
+                },
+              ]}
+              speed={400}
+              easing="linear"
+            >
                 {mappedProjects}
 
             </ReactSimplyCarousel>
