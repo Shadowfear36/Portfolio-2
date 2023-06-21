@@ -28,7 +28,7 @@
   }
 
   .m-job{
-    font-size: 40px !important;
+    font-size: 36px !important;
   }
   #root{
     width: 100vw;
@@ -67,6 +67,8 @@
 
   
 }
+
+
 .App {
   color: white;
   font-family: 'Orbitron', sans-serif;
@@ -153,7 +155,13 @@ button:hover {
   padding: 0px;
 }
 .p-l-25{
-  padding-left: 25;
+  margin-left: 25px;
+}
+.job {
+  
+}
+.p-l-0{
+  padding-left: 0px !important;
 }
 .p-b-15{
   padding-bottom: 15px;
