@@ -10,7 +10,7 @@ export default function About() {
                 <h2 className="sub-title m-0 p-0 m-center">About Me</h2>
                 <div className="container mpl-10 m-t-10">
                     <p>
-                    I am A full Stack Software Engineer.
+                    I am A full Stack Software Engineer. Who is experienced in Deploying production grade applications, <br/>I am also experienced in Computer Vision and Machine Learning applications.
                     </p>
                     <p>
                     Languages I Know:
@@ -26,6 +26,7 @@ export default function About() {
                         <button className="tag bg-pink">SASS</button>
                         <button className="tag bg-orange">HTML</button>
                         <button className="tag bg-pink">CSS</button>
+                        <button className="tag bg-purple">NextJS</button>
                     </div>
 
                     <p>
@@ -37,11 +38,12 @@ export default function About() {
                         <button className="tag bg-green">Shopify</button>
                         <button className="tag bg-red">GCS</button>
                         <button className="tag bg-pink">Insanity</button>
+                        <button className="tag bg-blue">Docker</button>
                     </div>
                 </div>
             </div>
             <div className="gif">
-                <img alt="Space Man Floating" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzc5NjVlZmY1ZGI0OGI1MDA5ODUwZDA4ZWE0NzBlNjNhOTM3NjUwNyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/dxmjrltfAJRLvqADOl/giphy.gif"/>
+                <img alt="Space Man Floating" src="https://i.gifer.com/X5NY.gif"/>
             </div>
         </div>
     </div>
