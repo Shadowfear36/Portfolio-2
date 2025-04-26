@@ -66,6 +66,10 @@
   .flip-landing{
     flex-direction: column-reverse !important;
   }
+
+  .m-pad-b-10{
+    padding-bottom: 200px !important;
+  }
   .m-uncenter{
     justify-content: flex-start !important;
   }
@@ -161,6 +165,10 @@ button:hover {
   font-weight: 900;
 }
 
+.sub-head {
+    font-size: 1.25em;
+}
+
 .m-0{
   margin: 0px;
 }
@@ -171,8 +179,23 @@ button:hover {
 .p-l-25{
   margin-left: 25px;
 }
-.job {
+.projBtm {
+  align-items: end;
   
+}
+
+
+.projcontainer {
+  border-radius: 10px;
+  border-left: 6px solid green;
+  padding-left: 10px;
+  font-weight: 800;
+  
+  display: flex;
+  flex-direction: column; /* make it vertical flex */
+  justify-content: space-between; /* push stuff to top and bottom */
+  height: 400px; /* set a fixed height (or min-height) if you want consistent cards */
+  position: relative;
 }
 .p-l-0{
   padding-left: 0px !important;
@@ -254,6 +277,7 @@ button:hover {
   top: 15px;
 }
 
+
 .container {
   border-radius: 10px;
   border-left: 6px solid green;
@@ -311,6 +335,10 @@ button:hover {
 
 .bg-yellow {
   background-color: #E8BD26;
+}
+
+.bioTxt{
+  font-weight: 300;
 }
 
 .card {

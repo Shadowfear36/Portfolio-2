@@ -11,7 +11,16 @@ export default function Landing() {
         <h2 className="sub-title m-0 p-0 m-job">Software Engineer</h2>
         <div className="flex flex-row">
           <NavLink to="/projects"><button className='btn-1 m-r-10 m-t-10'>Projects</button></NavLink>
-          <NavLink to="/about"><button className='btn-2 m-t-10'>About Me</button></NavLink>
+          <NavLink to="/about"><button className='btn-2 m-t-10 m-r-10 '>About Me</button></NavLink>
+        </div>
+        <div className="flex flex-row">
+            <a 
+              href="/Resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+            >
+              <button className='btn-2 m-t-10 btn-2-sub'>Resume</button>
+            </a>
         </div>
       </div>
       <div className="canvas">
